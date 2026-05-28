@@ -85,10 +85,10 @@ Se implementó un sistema básico de autenticación para administrador utilizand
 La interfaz fue desarrollada con TailwindCSS utilizando:
 
 - Diseño responsive
-- Cards modernas
+- Cards 
 - Animaciones hover
 - Inputs personalizados
-- Loader animado
+- Loader 
 - Alertas personalizadas
 
 ---
