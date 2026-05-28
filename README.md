@@ -119,7 +119,8 @@ src/
 │
 ├── App.jsx
 └── main.jsx
-API REST
+```
+# API REST
 
 La aplicación consume una API desplegada en Render mediante Axios.
 
@@ -129,12 +130,12 @@ GET BY ID
 POST
 PUT
 DELETE
-Instalación del Proyecto
-1 Clonar repositorio
+# Instalación del Proyecto
+- 1 Clonar repositorio
 git clone URL_DEL_REPOSITORIO
-2 Instalar dependencias
+- 2 Instalar dependencias
 npm install
-3 Configurar variables de entorno
+- 3 Configurar variables de entorno
 
 Crear archivo:
 
@@ -145,12 +146,12 @@ Agregar:
 VITE_API_BASE_URL=URL_DE_LA_API
 Ejecutar proyecto
 npm run dev
-Deploy
+# Deploy
 Frontend desplegado en:
 Vercel
 Backend desplegado en:
 Render
-Autor
+# Autor
 
 Proyecto desarrollado por:
 
