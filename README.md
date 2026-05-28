@@ -120,7 +120,7 @@ src/
 ├── App.jsx
 └── main.jsx
 ```
- 🌐 API REST
+# API REST
 
 La aplicación consume una API REST desplegada en Render mediante Axios.
 
@@ -136,31 +136,55 @@ La aplicación consume una API REST desplegada en Render mediante Axios.
 
 # Instalación del Proyecto
 
-## 1️Clonar repositorio
+## Clonar repositorio
 
 ```bash
 git clone URL_DEL_REPOSITORIO
-2️⃣ Instalar dependencias
+```
+
+## Instalar dependencias
+
+```bash
 npm install
-3️⃣ Configurar variables de entorno
+```
+
+## Configurar variables de entorno
 
 Crear archivo:
 
+```env
 .env
+```
 
 Agregar:
 
+```env
 VITE_API_BASE_URL=URL_DE_LA_API
-4️⃣ Ejecutar proyecto
+```
+
+## Ejecutar proyecto
+
+```bash
 npm run dev
-Deploy
-Frontend desplegado en:
-Vercel
-Backend desplegado en:
-Render
-Autor
+```
+
+---
+
+# Deploy
+
+## Frontend desplegado en:
+
+* Vercel
+
+## Backend desplegado en:
+
+* Render
+
+---
+
+# Autor
 
 Proyecto desarrollado por:
 
-Paulocésar Donovan Olivera Bautista
-Paulocésar Donovan Olivera Bautista
+**Paulocésar Donovan Olivera Bautista**
+
