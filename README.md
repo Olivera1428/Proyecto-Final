@@ -120,22 +120,29 @@ src/
 ├── App.jsx
 └── main.jsx
 ```
-# API REST
+ 🌐 API REST
 
-La aplicación consume una API desplegada en Render mediante Axios.
+La aplicación consume una API REST desplegada en Render mediante Axios.
 
-Operaciones utilizadas:
-GET
-GET BY ID
-POST
-PUT
-DELETE
+## Operaciones utilizadas
+
+- GET
+- GET BY ID
+- POST
+- PUT
+- DELETE
+
+---
+
 # Instalación del Proyecto
-- 1 Clonar repositorio
+
+## 1️Clonar repositorio
+
+```bash
 git clone URL_DEL_REPOSITORIO
-- 2 Instalar dependencias
+2️⃣ Instalar dependencias
 npm install
-- 3 Configurar variables de entorno
+3️⃣ Configurar variables de entorno
 
 Crear archivo:
 
@@ -144,15 +151,16 @@ Crear archivo:
 Agregar:
 
 VITE_API_BASE_URL=URL_DE_LA_API
-Ejecutar proyecto
+4️⃣ Ejecutar proyecto
 npm run dev
-# Deploy
+Deploy
 Frontend desplegado en:
 Vercel
 Backend desplegado en:
 Render
-# Autor
+Autor
 
 Proyecto desarrollado por:
 
+Paulocésar Donovan Olivera Bautista
 Paulocésar Donovan Olivera Bautista
