@@ -1,16 +1,190 @@
-# React + Vite
+# TechStore CRUD - React + API REST (PROYECTO FINAL)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del Proyecto
 
-Currently, two official plugins are available:
+TechStore es una aplicación CRUD desarrollada con React que permite gestionar productos tecnológicos mediante operaciones de:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Crear productos
+- Listar productos
+- Editar productos
+- Eliminar productos
 
-## React Compiler
+El proyecto consume una API REST propia desarrollada en backend y desplegada en Render.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Frontend
+- React
+- React Router DOM
+- Axios
+- TailwindCSS
+- SweetAlert2
+- Zustand
+
+## Backend
+- API REST desplegada en Render
+
+---
+
+# Funcionalidades Implementadas
+
+## Read (Listar)
+- Visualización de productos en tarjetas.
+- Estado de carga.
+- Manejo de errores.
+- Buscador dinámico de productos.
+
+---
+
+## create (Crear)
+- Formulario controlado con React.
+- Validaciones de campos.
+- Registro de nuevos productos en la API.
+
+---
+
+## Update (Editar)
+- Reutilización del mismo formulario para edición.
+- Obtención de producto por ID.
+- Actualización mediante petición PUT.
+
+---
+
+## Delete (Eliminar)
+- Eliminación de productos.
+- Confirmación con SweetAlert2.
+
+---
+
+# Sistema de Login
+
+Se implementó un sistema básico de autenticación para administrador utilizando:
+
+- Zustand
+- LocalStorage
+
+## Funciones:
+- Iniciar sesión
+- Cerrar sesión
+- Protección visual de botones CRUD
+
+### Cuando el usuario no es administrador:
+- Solo puede visualizar productos.
+
+### Cuando el usuario inicia sesión:
+- Puede crear
+- Editar
+- Eliminar productos
+
+---
+
+# Diseño UI
+
+La interfaz fue desarrollada con TailwindCSS utilizando:
+
+- Diseño responsive
+- Cards modernas
+- Animaciones hover
+- Inputs personalizados
+- Loader animado
+- Alertas personalizadas
+
+---
+
+# Estructura del Proyecto
+
+```bash
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── ProductoCard.jsx
+│   └── ProductoForm.jsx
+│
+├── hooks/
+│   └── useProductos.jsx
+│
+├── pages/
+│   ├── ProductosPage.jsx
+│   ├── ProductoFormPage.jsx
+│   └── LoginPage.jsx
+│
+├── services/
+│   └── api.js
+│
+├── store/
+│   └── useAuthStore.js
+│
+├── App.jsx
+└── main.jsx
+```
+# API REST
+
+La aplicación consume una API REST desplegada en Render mediante Axios.
+
+## Operaciones utilizadas
+
+- GET
+- GET BY ID
+- POST
+- PUT
+- DELETE
+
+---
+
+# Instalación del Proyecto
+
+## Clonar repositorio
+
+```bash
+git clone URL_DEL_REPOSITORIO
+```
+
+## Instalar dependencias
+
+```bash
+npm install
+```
+
+## Configurar variables de entorno
+
+Crear archivo:
+
+```env
+.env
+```
+
+Agregar:
+
+```env
+VITE_API_BASE_URL=URL_DE_LA_API
+```
+
+## Ejecutar proyecto
+
+```bash
+npm run dev
+```
+
+---
+
+# Deploy
+
+## Frontend desplegado en:
+
+* Vercel
+
+## Backend desplegado en:
+
+* Render
+
+---
+
+# Autor
+
+Proyecto desarrollado por:
+
+**Paulocésar Donovan Olivera Bautista**
+
